@@ -12,10 +12,11 @@
         
         <div class="datos">
             <div class="asociate">
-            <h1>ASOCIATE</h1>
-            <p style="font-size: X-large;">Dejanos tus datos y nos contactaremos con vos!</p>
+            <h1>Asociate</h1>
+            <p style="font-size: large;">Dejanos tus datos y nos contactaremos con vos!</p>
             </div>
-            <div class="nombre">
+           <form action="/asociarse" method="POST">
+              <div class="nombre">
                 <p>Nombre:</p>
                 <input type="text" name="nombre" id="name" placeholder="Nombre completo">
             </div>
@@ -25,11 +26,11 @@
             </div>
             <div class="direccion">
                 <p>Dirección:</p>
-                <input type="text" name="direccion" id="direccion" placeholder="Dirección">
+                <input type="text" name="address" id="direccion" placeholder="Dirección">
             </div>
             <div class="telefono">
                 <p>Teléfono de contacto:</p>
-                <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                <input type="tel" name="telephone" id="telefono" placeholder="Teléfono">
             </div>
             <div class="nacimiento">
                 <p>Fecha de nacimiento:</p>
@@ -38,6 +39,7 @@
             <div class="asociarme">
                 <button name="submit" type="submit" id="submit">Inscribirme</button>
             </div>
+           </form>
         </div>
     </div>
     <%- include('./partials/footer.ejs')  %> 
