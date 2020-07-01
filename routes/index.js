@@ -9,6 +9,7 @@ router.get("/horarios", Controller.horarios);
 router.get("/actividades", Controller.actividades);
 router.get("/planes", Controller.planes);
 router.get("/asociarse", Controller.asociarse);
+router.post("/asociarse", Controller.asociate);
 router.get("/contacto", Controller.contacto);
 router.post("/contacto", Controller.sendMail);
 router.get("/enterateMas", Controller.enterateMas);
