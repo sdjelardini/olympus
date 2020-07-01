@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+.logo-footer {
+    width: 15%;
+    padding-left: 0%;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+h3, h4{
+    color: white;
+}
+
+.contacto {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.contactanospa {
+    color: white !important;
+}
+
+.footer {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.facebook, .instagram{
+    width: 30px;
+    height: 30px;
+}
+
+.seguinos, .contacto {
+    display: inline-block;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.seguinos {
+    text-align: center;
+    border-left: 1px solid grey;
+}
+.contacto {
+    border-right: 0px;
+    border-right-color: transparent;
+    text-align: center;
+}
+
+.mail {
+    margin-bottom: 3%;
+}

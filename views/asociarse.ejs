@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympus Life Center</title>
+    <link rel='stylesheet' href='/stylesheets/asociarse.css'>
+    <%- include('./partials/header.ejs')  %> 
+</head>
+<body>
+    <div class="containerAsociarse">
+        
+        <div class="datos">
+            <div class="asociate">
+            <h1>Asociate</h1>
+            <p style="font-size: large;">Dejanos tus datos y nos contactaremos con vos!</p>
+            </div>
+            <div class="nombre">
+                <p>Nombre:</p>
+                <input type="text" name="nombre" id="name" placeholder="Nombre completo">
+            </div>
+            <div class="email">
+                <p>Email:</p>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="direccion">
+                <p>Dirección:</p>
+                <input type="text" name="address" id="direccion" placeholder="Dirección">
+            </div>
+            <div class="telefono">
+                <p>Teléfono de contacto:</p>
+                <input type="tel" name="telephone" id="telefono" placeholder="Teléfono">
+            </div>
+            <div class="nacimiento">
+                <p>Fecha de nacimiento:</p>
+                <input type="date" name="nacimiento" id="nacimiento" placeholder="Fecha de nacimiento">
+            </div>
+            <div class="asociarme">
+                <button name="submit" type="submit" id="submit">Inscribirme</button>
+            </div>
+        </div>
+    </div>
+    <%- include('./partials/footer.ejs')  %> 
+</body>
+</html>

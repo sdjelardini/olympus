@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Olympus Life Center</title>
+    <link rel='stylesheet' href='/stylesheets/styles.css'>
+    <%- include('./partials/header.ejs')  %> 
+  </head>
+  <body>
+    <main>
+
+      <section class="cover portada">
+        <p class="descripcion">VENÍ A CONOCER NUESTRAS INSTALACIONES</p>
+        <a href="./enterateMas" class="enlace">ENTERATE MÁS</a>
+      </section>
+
+      <section class="cover actividades">
+        <p class="descripcion">DESCARGÁ NUESTRA PLANILLA DE ACTIVIDADES</p>
+        <a href="/planillaOlympus.pdf" class="enlace" download="Planilla Actividades Olympus">DESCARGAR</a>
+      </section>
+
+      <section class="cover suscribite">
+        <p class="descripcion">SUSCRIBITE PARA CONOCER NUESTRAS PROMOS</p>
+        <form action="validar.php" method="POST">
+          <label for="email"></label>
+          <input type="email" placeholder="Tu correo.." name="email" id="email">
+          <input type="submit" value="SUSCRIBIRME" class="submit">
+        </form>
+      </section>
+
+  </main>
+  <%- include('./partials/footer.ejs') %> 
+    <script>
+
+        const coverActividades = document.querySelector('.cover.actividades');
+        const coverSuscripciones = document.querySelector('.cover.suscribite');
+        const cambiarFondo = entries => {
+            const header = document.getElementById('header');
+            if (entries[0].isIntersecting) {
+                header.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+            } else {
+                header.style.backgroundColor = 'transparent';
+            }
+        };
+
+        const observer = new IntersectionObserver(cambiarFondo, {
+            threshold: 0.5
+        });
+
+        observer.observe(coverSuscripciones);
+        observer.observe(coverActividades);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Olympus Life Center</title>
+   <link rel='stylesheet' href='/stylesheets/styles.css'>
+   <%- include('../partials/header.ejs')  %> 
+</head>
+<body>
+<img src="../images/actividades/natacionDef.jpg" style="width: 100%; position: relative; opacity: 0.5;">
+<div class="texto" style="position: absolute; top: 15%; left: 10%; right: 10%; color: white; font-size: x-large;">
+   <h1>PILETA LIBRE</h1>
+   <p>Horarios Pileta Libre:</p>
+   <ul>
+      <li>
+         Lunes, Miércoles y Viernes de 7 a 16:30hs y de 20:30a 22:30hs
+      </li>
+      <li>
+         Martes de 7 a 8:30hs, de 12:30 a 16:30hs y de 20:30 a 22:30hs 
+      </li>
+      <li>
+         Jueves de 7 a 8:30, de 12 a 16:30 y de 20:30 a 22:30hs.
+      </li>
+         Sábado de 8:30 a 9:30 y de 13:15 a 19hs
+      </li>
+   </ul>
+</div>
+
+   <%- include('../partials/footer.ejs')  %> 
+   <style>
+      header{
+         position: absolute !important;
+      }
+      li, p, h1 {
+         margin-bottom: 3%;
+      }
+    </style>
+</body>
+</html>

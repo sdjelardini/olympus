@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    /* background-color:#1c1c1c; */
+    /* background: rgba(0,0,0,0.9); */
+    position: fixed;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    border-bottom: 0%;
+    padding-right: 0px;
+    padding-left: 0px;
+    z-index: 999;
+    text-align: center;
+    padding-left: 3%;
+}
+
+.barra {
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+.navbar {
+    min-height: 50px;
+    margin-bottom: 20px;
+    width: 70%;
+    margin-right: 5%;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-olympus {
+    width: 15%;
+    margin-right: 8%;
+    /* height: 20%; */
+    padding-left: 0%;
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-left: 8%;
+}

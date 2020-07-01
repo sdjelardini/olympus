@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    margin-top: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+footer, form{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.container {
+    background: rgba(0,0,0,0.9);
+    position: absolute !important;
+    margin-top: 0px;
+}
+
+.contactanos, .telefono, .mailContacto, .escribinos{
+    color: white;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.telefono {
+    padding-top: 5px;
+}
+
+.mailContacto {
+    padding-top: 0px;
+    margin-top: 1px;
+}
+
+.facebookContacto{
+    width: 45px;
+    height: 45px;
+    margin-left: 45%;
+}
+
+.instagramContacto {
+    width: 30px;
+    height: 30px;
+    margin-left: 2%;
+}
+
+.escribinos {
+    padding-top: 8px;
+}
+
+.contacto2 {
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#name {
+    width: 40%;
+    padding: 5px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#email {
+    width: 40%;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.asunto {
+    width: 20%;
+    padding: 20px;
+    padding-left: 0px;
+}
+
+#mensaje {
+    width: 85%;
+    padding: 10px;
+}
+
+#submit {
+    visibility: visible; 
+    animation-name: fadeInUp; 
+    padding: 3px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    margin-top: 10px;
+    margin-left: 37%;
+}
+
+.enviar {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonEnviar {
+    text-align: center;
+}

@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+header {
+    position: absolute !important;
+}
+
+.horarios {
+    padding-top: 8%;
+    padding-left: 10%;
+    color: white;
+}
+
+.egt {
+    margin-left: 10%;
+    border: 2px solid white;
+    border-bottom: 2px solid white !important ;
+    color: white;
+    width: 80%;
+    background-color:rgb(66, 66, 66);
+    border-bottom: 1px solid gray;
+}
+
+
+.col1 {
+    background-color: darkgrey;
+}
+
+.col {
+    background-color:rgb(66, 66, 66);
+}
+
+/* th {
+    background-color: darkgrey;
+} */
+
+.oscuro {
+    background-color: rgb(88, 88, 88);
+}
+
+th, td {
+    width: 3%;
+    text-align: center;
+    /* border-right: 1px solid; */
+    /* border-bottom: 1px solid; */
+    padding: 5px;
+}
+
+.horario {
+    float: right;
+}
+
+
+.gris{
+    background-color:rgb(66, 66, 66);
+}
+
+.belu {
+    float: left;
+}
+
+td {
+    background-color: white;
+    color: gray;
+}
+
+.borde {
+    border-bottom: 1px solid gray;
+    width: 5%;
+}
+
+span {
+    color: black;
+}

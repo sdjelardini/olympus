@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.containerPlanes {
+    padding-top: 10%;
+    padding-left: 10%;
+    width: 80%;
+}
+
+.tituloPlan {
+    color: white;
+    margin-bottom: 4%;
+}
+
+.texto {
+    margin-bottom: 4%;
+}
+
+summary {
+    outline: none;
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+ul li {
+    color: white;
+    list-style: none;
+}
+
+header {
+    position: absolute !important;
+}
+
+footer {
+    margin-bottom: 0% !important;
+}
+
+li {
+    font-size: large;
+}

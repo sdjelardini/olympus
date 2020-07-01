@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Olympus Life Center</title>
+   <link rel='stylesheet' href='/stylesheets/styles.css'>
+   <%- include('../partials/header.ejs')  %> 
+</head>
+<body>
+   <div class="natacion">
+      <img src="../images/actividades/natacionDef.jpg" style="width: 100%; position: relative; opacity: 0.5;">
+      <div class="texto" style="position: absolute; top: 13%; left: 10%; right: 10%; color: white; font-size: x-large;">
+      <h1>NATACIÓN</h1>
+      <p>Clases para bebes, niñxs, adolescentes y adultos.<br>
+         Niveladas.</p>
+      <p>Horarios Natación:</p>
+      <ul>
+      <details>
+         <summary>
+            BEBÉS
+         </summary>
+         <ul>
+            <li>
+               Martes y Jueves 18:15hs
+            </li>
+            <li>
+               Sábado 12hs
+            </li>
+         </ul>
+      </details>
+      <details>
+         <summary>
+            2 y 3 años
+         </summary>
+         <ul>
+            <li>
+               Lunes, Miércoles y Viernes 17:30 y 18:15hs
+            </li>
+            <li>
+               Martes y Jueves 16:45 y 17:30hs
+            </li>
+            <li>
+               Sábado 10:30 y 11:15hs
+            </li>
+         </ul>
+      </details>
+      <details>
+         <summary>
+            4 y 5 años
+         </summary>
+         <ul>
+            <li>
+               Lunes, Miércoles y Viernes 17:30 y 18:15hs
+            </li>
+            <li>
+               Martes y Jueves 16:45 y 17:30hs
+            </li>
+            <li>
+               Sábado 10:30 y 11:15hs
+            </li>
+         </ul>
+      </details>
+      <details>
+         <summary>
+            6 a 12 años
+         </summary>
+         <ul>
+            <li>
+               Lunes, Miércoles y Viernes 17:30 y 18:30hs
+            </li>
+            <li>
+               Lunes 16:30
+            </li>
+            <li>
+               Martes y Jueves 17:30hs
+            </li>
+            <li>
+               Sábado 10:30 y 11:30hs
+            </li>
+         </ul>
+      </details>
+      <details>
+         <summary>
+            ADOLESCENTES
+         </summary>
+         <ul>
+            <li>
+               Martes y Jueves 18:30hs
+            </li>
+         </ul>
+      </details> 
+      <details>
+         <summary>
+            ADULTOS
+         </summary>
+         <ul>
+            <li>
+               Lunes, Miércoles y Viernes 8, 9, 19:30 y 20:30hs
+            </li>
+            <li>
+               Martes y Jueves 13:30 y 19:30hs
+            </li>
+            <li>
+               Sábado 9:30hs
+            </li>
+         </ul>
+      </details>
+   </ul>
+   </div>
+   <%- include('../partials/footer.ejs')  %> 
+   <style>
+      header{
+         position: absolute !important;
+      }
+      summary{
+         margin-bottom: 3%;
+         outline: none;
+      }
+      li {
+         margin-bottom: 2%;
+      }
+    </style>
+</body>
+</html>

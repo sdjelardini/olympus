@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympus Life Center</title>
+    <link rel='stylesheet' href='/stylesheets/contacto.css'>
+    <%- include('./partials/header.ejs')  %> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+</head>
+<body>
+
+    <h1 class="contactanos">CONTACTO</h1>
+    <h2 class="telefono">
+        <a href="https://api.whatsapp.com/send?phone=5491128692121">Tel: 11 2869 2121 Sólo Whatsapp</a> 
+    </h2>
+    <br>
+    <h2 class="mailContacto">
+        <a class="mailContacto" href = "mailto:olympuslifecenter@hotmail.com">olympuslifecenter@hotmail.com</a>
+    </h2>
+    <br>
+    <a href="https://www.facebook.com/olympuslifecenter">
+      <img src="/images/facebook.png" alt="" class="facebookContacto">
+        <!-- <i class="fab fa-facebook-f facebookContacto"></i> -->
+        </a>
+        <a href="https://www.instagram.com/olympuslifecenter/" class="instagramContacto">
+          <img src="/images/instagram1.png" style="width: 40px; height: 40px;">
+        <!-- <i class="fab fa-instagram"></i> -->
+        </a>
+    <h3 class="escribinos">Escribinos, o completá el siguiente formulario:</h3>
+
+    <div class="contacto2">
+        <form action="/contacto" method="POST">
+            <label for="nombre"></label>
+            <input type="text" name="nombre" id="name" placeholder="Nombre">
+            <label for="email"></label>
+            <input class="input" type="email" name="email" id="email" placeholder="Email">
+            <div class="asunto">
+               <select name="asunto" id="asunto">
+                    <option value="">Asunto</option>
+                    <option value="Tarifas">Actividades</option>
+                    <option value="Tarifas">Planes</option>
+                    <option value="Tarifas">Tarifas</option>
+                    <option value="Horarios">Horarios</option>
+                    <option value="Otros">Otro</option>
+               </select>
+            </div>
+            <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje..." rows="5"></textarea><br>
+            <div class="enviar">
+                <input type="submit" value="Enviar mensaje" class="botonEnviar">
+            </div>
+        </form>
+
+   </div>
+   <%- include('./partials/footer.ejs')  %> 
+</body>
+</html>
