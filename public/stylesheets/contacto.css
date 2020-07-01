@@ -19,7 +19,7 @@ footer, form{
 
 .contactanos, .telefono, .mailContacto, .escribinos{
     color: white;
-    padding-top: 10%;
+    padding-top: 9%;
     display: flex;
     justify-content: center;
     align-items: center;

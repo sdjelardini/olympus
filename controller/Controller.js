@@ -24,22 +24,24 @@ const Controller = {
   enterateMas: async (req, res) => {
     res.render("enterateMas");
   },
+  olympusEnCasa: async (req, res) => {
+    res.render("olympusEnCasa");
+  },
   sendMail: async (req, res) => {
     try {
       sgMail.setApiKey(process.env.SENDGRID_API_KEY);
       const msg = {
-        to: "olympuslifecenter@gmail.com",
+        to: "olympuslifecenter@hotmail.com",
         from: "sdjelardini@hotmail.com",
         // from: req.body.email,
         // asunto: req.body.asunto,
         subject: "Contacto",
-        text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`,
-        html: "<strong>Hey Sofia, you have a new client.</strong>",
+        text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
       };
       const response = await sgMail.send(msg);
       if (response) {
         res.render("contacto", {
-          mensaje: "El mensaje fue enviado con éxito!",
+          mensaje: "El mensaje fue enviado con éxito!"
         });
         return;
       }

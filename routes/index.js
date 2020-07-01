@@ -3,6 +3,7 @@ var router = express.Router();
 
 var Controller = require("../controller/Controller");
 
+router.get("/olympusEnCasa", Controller.olympusEnCasa);
 router.get("/", Controller.home);
 router.get("/horarios", Controller.horarios);
 router.get("/actividades", Controller.actividades);

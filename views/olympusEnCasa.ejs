@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Olympus Life Center</title>
+    <link rel='stylesheet' href='/stylesheets/horarios.css'>
+    <%- include('./partials/header.ejs')  %> 
+  </head>
+  <body>
+    <h1 class="horarios">Horarios clases virtuales:</h1>
+    <table class="egt">
+        <tr class="col">
+            <th class=" oscuro color">LUNES</th>
+            <th class="oscuro color">MARTES</th>
+            <th class="oscuro color">MIÉRCOLES</th>
+            <th class="oscuro color">JUEVES</th>
+            <th class="oscuro color">VIERNES</th>     
+        </tr>
+        <tr class="col">
+            <td class="gris"></td>
+            <td class="gris"></td>
+            <th class="gris">9:00</th>
+            <td class="gris"></td>
+            <td class="gris"></td>
+        </tr>
+        <tr class="col">
+             <td class="borde"><span>Localizada</span><br>
+                9:00 - 10:00
+             </td>
+             <td class="borde"></td>
+             <td class="borde"><span>Localizada</span><br>
+                9:00 - 10:00
+            </td>
+             <td class="borde"></td>
+             <td class="borde"><span>Localizada</span><br>
+                9:00 - 10:00
+            </td>
+        </tr>
+        <tr class="col">
+            <td class="gris"></td>
+            <td class="gris"></td>
+            <th class="gris">10:00</th>
+            <td class="gris"></td>
+            <td class="gris"></td>
+        </tr>
+        <tr class="col">
+             <td class="borde"><span>Estiramiento</span><br>
+            10:00 - 11:00
+            </td>
+             <td class="borde">
+            </td>
+             <td class="borde"><span>Estiramiento</span><br>
+                10:00 - 11:00
+            </td>
+             <td class="borde">
+            </td>
+             <td class="borde"><span>Estiramiento</span><br>
+                10:00 - 11:00
+            </td>
+        </tr>
+        <tr class="col">
+            <td class="gris"></td>
+            <td class="gris"></td>
+            <th class="gris">16:00</th>
+            <td class="gris"></td>
+            <td class="gris"></td>
+        </tr>
+        <tr class="col">
+             <td class="borde">
+            </td>
+             <td class="borde"><span>Yoga</span><br>
+                10:00 - 11:00
+            </td>
+             <td class="borde">
+            </td>
+             <td class="borde"><span>Yoga</span><br>
+                10:00 - 11:00
+            </td>
+             <td class="borde">
+            </td>
+        </tr>
+        <tr class="col">
+            <td class="gris"></td>
+            <td class="gris"></td>
+            <th class="gris">17:00</th>
+            <td class="gris"></td>
+            <td class="gris"></td>
+        </tr>
+        <tr>
+            <td class="borde"><span>F. Combate</span><br>
+                17:00 - 18:00</td>
+            <td class="borde"></td>
+            <td class="borde"><span>F. Combate</span><br>
+                17:00 - 18:00</td>
+            <td class="borde"></td>
+            <td class="borde"><span>F. Combate</span><br>
+                17:00 - 18:00</td>
+        </tr>
+        <tr class="col">
+            <td class="gris"></td>
+            <td class="gris"></td>
+            <th class="gris">18:00</th>
+            <td class="gris"></td>
+            <td class="gris"></td>
+        </tr>
+        <tr>
+            <td class="borde"><span>X-55</span><br>
+                18:00 - 19:00</td>
+            <td class="borde"><span>Local Pump</span><br>
+                18:00 - 19:00</td>
+            <td class="borde"><span>X-55</span><br>
+                18:00 - 19:00</td>
+            <td class="borde"><span>Local Pump</span><br>
+                18:00 - 19:00</td>
+            <td class="borde"></td>
+        </tr>
+        <tr class="col">
+            <td class="gris"></td>
+            <td class="gris"></td>
+            <th class="gris">19:00</th>
+            <td class="gris"></td>
+            <td class="gris"></td>
+        </tr>
+        <tr class="col">
+            <td class="borde">
+           </td>
+            <td class="borde"><span>Localizada</span><br>
+               19:00 - 20:00
+           </td>
+            <td class="borde">
+           </td>
+            <td class="borde"><span>Localizada</span><br>
+               19:00 - 20:00
+           </td>
+            <td class="borde">
+           </td>
+       </tr>
+        <tr class="col">
+            <td class="gris"></td>
+            <td class="gris"></td>
+            <th class="gris">20:00</th>
+            <td class="gris"></td>
+            <td class="gris"></td>
+        </tr>
+        <td class="borde"></td>
+        <td class="borde"></td>
+        <td class="borde"><span>Zumba</span><br>
+            20:00 - 21:00</td>
+        <td class="borde"></td>
+        <td class="borde"><span>Zumba</span><br>
+            20:00 - 21:00</td>
+    </table>
+    <div class="comentarios">
+        <h4>Sábado: 12:00 Estiramiento - 18:00 Ritmos</h4>
+    </div>
+    <div class="atencion">
+        <strong>¡ATENCIÓN!</strong><br>
+        <p>Zumba se dicta por Zoom: pedir contraseña por instagram!</p>
+        <p>Fitness de Combate y X-55 se dictan en el instagram de la profesora! Buscar en <a href="https://www.instagram.com/olympuslifecenter/">@olympuslifecenter</a>!</p>
+    </div>
+    <%- include('./partials/footer.ejs')  %> 
+
+  </body>
+  <style>
+      .comentarios, .atencion{
+          text-align: center;
+          color: white;
+          margin-bottom: 15px;
+          font-size: medium;
+      }
+  </style>
+</html>
