@@ -20,11 +20,14 @@
 
       <section class="cover suscribite">
         <p class="descripcion">SUSCRIBITE PARA CONOCER NUESTRAS PROMOS</p>
-        <form action="validar.php" method="POST">
+        <form action="/" method="POST">
           <label for="email"></label>
           <input type="email" placeholder="Tu correo.." name="email" id="email">
           <input type="submit" value="SUSCRIBIRME" class="submit">
         </form>
+      <% if (typeof mensaje!='undefined') { %>
+          <p class="mensaje"><%= mensaje %></p> 
+      <% } %>
       </section>
 
   </main>

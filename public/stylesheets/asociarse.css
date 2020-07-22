@@ -34,6 +34,7 @@ body{
     background-color: transparent;
     font-weight: 600;
     border-radius: 4px;
+    margin-left: 24%;
 }
 
 #name, #email, #direccion, #telefono, #nacimiento {
@@ -53,3 +54,26 @@ h1{
     width: 60%;
 }
 
+.mensaje {
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    color: white;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .containerAsociarse {
+        padding-top: 110%;
+    }
+    #submit {
+        margin-left: 18%;
+    }
+    form {
+        margin-left: 30% !important;
+    }
+    .nombre, .email, .direccion, .telefono, .nacimiento {
+        width: 70% !important;
+    }
+}

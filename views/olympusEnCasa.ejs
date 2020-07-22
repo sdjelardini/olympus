@@ -6,6 +6,7 @@
     <%- include('./partials/header.ejs')  %> 
   </head>
   <body>
+<div class="be">
     <h1 class="horarios">Horarios clases virtuales:</h1>
     <table class="egt">
         <tr class="col">
@@ -158,7 +159,7 @@
         <p>Fitness de Combate y X-55 se dictan en el instagram de la profesora! Buscar en <a href="https://www.instagram.com/olympuslifecenter/">@olympuslifecenter</a>!</p>
     </div>
     <%- include('./partials/footer.ejs')  %> 
-
+</div>
   </body>
   <style>
       .comentarios, .atencion{
@@ -166,6 +167,18 @@
           color: white;
           margin-bottom: 15px;
           font-size: medium;
+          margin-right: 3%;
       }
+
+    @media screen and (max-width: 500px) {
+        .be {
+            padding-top: 112%;
+            margin-left: 6%;
+            margin-right: 3%;
+        }
+        .horarios {
+            padding-left: 0%;
+        }
+    }
   </style>
 </html>

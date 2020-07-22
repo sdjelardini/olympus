@@ -65,3 +65,17 @@ p {
 #email {
     padding: 5px 20px;
 }
+
+@media screen and (max-width: 500px) {
+    .body {
+        width: 100%;
+    }
+    main{
+        padding-top: 100%;
+    }
+    .descripcion{
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

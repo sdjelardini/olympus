@@ -64,4 +64,22 @@ header {
     height: 280px;
     width: 100%;
 }
+
+@media screen and (max-width:500px) {
+    .containerActividades {
+        padding-top: 110%;
+    }
+    .actividades{
+        display: inline;
+    }
+    .recuadro {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .titles {
+        text-align: center;
+        z-index: 999;
+        padding-right: 15%;
+    }
+}
   

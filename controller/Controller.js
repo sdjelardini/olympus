@@ -29,10 +29,12 @@ const Controller = {
   },
   sendMail: async (req, res) => {
     try {
-      sgMail.setApiKey("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");
+      // var sg = require("sendgrid")("SENDGRID_API_KEY");
+      sgMail.setApiKey("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");
+      // sgMail.sg;
       const msg = {
         to: "olympuslifecenter@gmail.com",
-        from: "sdjelardini@hotmail.com",
+        from: "olympuslifecenter@hotmail.com",
         // asunto: req.body.asunto,
         subject: "Contacto",
         text: `Nombre:${req.body.nombre} Email:(${req.body.email}) Asunto:${req.body.asunto} Mensaje: ${req.body.mensaje}`
@@ -52,10 +54,10 @@ const Controller = {
   },
   asociate: async (req, res) => {
     try {
-      sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+      sgMail.setApiKey("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");
       const asociate = {
         to: "olympuslifecenter@gmail.com",
-        from: "sdjelardini@hotmail.com",
+        from: "olympuslifecenter@hotmail.com",
         // asunto: req.body.asunto,
         subject: "Asociarse",
         text: `Nombre: ${req.body.nombre},
@@ -74,6 +76,29 @@ const Controller = {
     } catch (error) {
       console.log(error.response.body.errors);
       res.render("asociarse", { mensaje: "El mensaje no pudo ser enviado" });
+      return;
+    }
+  },
+  suscribite: async(req,res) => {
+    try {
+      sgMail.setApiKey("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");
+      const asociate = {
+        to: "olympuslifecenter@gmail.com",
+        from: "olympuslifecenter@hotmail.com",
+        // asunto: req.body.asunto,
+        subject: "Suscripción",
+        text: `Email: ${req.body.email}`
+      };
+      const response = await sgMail.send(asociate);
+      if (response) {
+        res.render("index", {
+          mensaje: "Te suscribiste con éxito!"
+        });
+        return;
+      }
+    } catch (error) {
+      console.log(error.response.body.errors);
+      res.render("index", { mensaje: "El mensaje no pudo ser enviado" });
       return;
     }
   }

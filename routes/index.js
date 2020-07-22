@@ -5,6 +5,7 @@ var Controller = require("../controller/Controller");
 
 router.get("/olympusEnCasa", Controller.olympusEnCasa);
 router.get("/", Controller.home);
+router.post("/", Controller.suscribite);
 router.get("/horarios", Controller.horarios);
 router.get("/actividades", Controller.actividades);
 router.get("/planes", Controller.planes);

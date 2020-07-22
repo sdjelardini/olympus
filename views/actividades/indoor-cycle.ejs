@@ -9,17 +9,17 @@
    <div class="indoorCycle">
       <img src="../images/actividades/indoorCycleFondo.jpg" style="width: 100%; position: relative; opacity: 0.4;">
       <h1 style="position: absolute; top: 15%; left: 10%; color: white;">Indoor Cycle</h1>
-      <p style="position: absolute; top: 25%; left: 10%; color: white; font-size: x-large; right: 10%;">El ciclismo de salón es un ejercicio que consiste en rodar sobre una bicicleta estática, a la cual se le puede agregar diferentes resistencias que impactan directamente en el ritmo cardíaco y el esfuerzo muscular de las personas. Es una clase de 45 minutos con buena música y mucha energia.</p>
-      <p style="position: absolute; top: 40%; left: 10%; right: 10%; color: white; font-size: x-large;">Horarios Indoor Cycle:</p>
-      <p style="position: absolute; top: 45%; left: 10%; color: white; font-size: x-large; right: 10%;">
+      <p class="uno" style="position: absolute; top: 25%; left: 10%; color: white; font-size: x-large; right: 10%;">El ciclismo de salón es un ejercicio que consiste en rodar sobre una bicicleta estática, a la cual se le puede agregar diferentes resistencias que impactan directamente en el ritmo cardíaco y el esfuerzo muscular de las personas. Es una clase de 45 minutos con buena música y mucha energia.</p>
+      <p class="dos" style="position: absolute; top: 40%; left: 10%; right: 10%; color: white; font-size: x-large;">Horarios Indoor Cycle:</p>
+      <p class="tres" style="position: absolute; top: 45%; left: 10%; color: white; font-size: x-large; right: 10%;">
       <ul>
-         <li style="position: absolute; top: 48%; left: 10%; color: white; font-size: large;">
+         <li class="unoLI" style="position: absolute; top: 48%; left: 10%; color: white; font-size: large;">
          De lunes a viernes 8:30, 19 y 20hs
          </li>
-         <li style="position: absolute; top: 52%; left: 10%; color: white; font-size: large;">
+         <li class="dosLI" style="position: absolute; top: 52%; left: 10%; color: white; font-size: large;">
             Lunes, miércoles y viernes 13:30hs
          </li>
-         <li style="position: absolute; top: 56%; left: 10%; color: white; font-size: large;">
+         <li class="tresLI" style="position: absolute; top: 56%; left: 10%; color: white; font-size: large;">
             Sábado 11 y 17hs
          </li>
       </ul>
@@ -29,6 +29,26 @@
         header{
            position: absolute !important;
         }
+        @media screen and (max-width: 500px){
+         .indoorCycle {
+            padding-top: 105%
+         }
+         h1{
+            padding-top: 85%;
+         }
+         .uno {
+            padding-top: 90%;
+         }
+         .dos {
+            padding-top: 140%;
+         }
+         li {
+            padding-top: 140%;
+         }
+         footer {
+            display: none;
+         }
+      }
       </style>
    </div>
    <%- include('../partials/footer.ejs')  %> 

@@ -6,6 +6,7 @@
    <%- include('../partials/header.ejs')  %> 
 </head>
 <body>
+<div class="piletaLibre">
 <img src="../images/actividades/natacionDef.jpg" style="width: 100%; position: relative; opacity: 0.5;">
 <div class="texto" style="position: absolute; top: 15%; left: 10%; right: 10%; color: white; font-size: x-large;">
    <h1>PILETA LIBRE</h1>
@@ -33,6 +34,18 @@
       li, p, h1 {
          margin-bottom: 3%;
       }
+      @media screen and (max-width: 500px){
+         .piletaLibre {
+            padding-top: 105%
+         }
+         .texto {
+            padding-top: 85%;
+         }
+         footer {
+            display: none;
+         }
+      }
     </style>
+</div>
 </body>
 </html>

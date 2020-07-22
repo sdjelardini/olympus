@@ -6,7 +6,7 @@
    <%- include('../partials/header.ejs')  %> 
 </head>
 <body>
-<div class="Taekwondo">
+<div class="taekwondo">
       <img src="../images/actividades/taekwondoFondo.jpg" style="width: 100%; position: relative; opacity: 0.4;">
       <div class="texto" style="position: absolute; top: 13%; left: 10%; right: 10%; color: white; font-size: x-large;">
       <h1>TAEKWONDO</h1>
@@ -28,6 +28,17 @@
       position: absolute !important;
       background-color: rgba(0, 0, 0, 0.5);
    }
+   @media screen and (max-width: 500px){
+         .taekwondo {
+            padding-top: 105%
+         }
+         .texto {
+            padding-top: 85%;
+         }
+         footer {
+            display: none;
+         }
+      }
 </style>
 <%- include('../partials/footer.ejs')  %> 
 </body>

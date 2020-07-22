@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 </head>
 <body>
-
+<div class="containerContacto">
     <h1 class="contactanos">CONTACTO</h1>
     <h2 class="telefono">
         <a href="https://api.whatsapp.com/send?phone=5491128692121">Tel: 11 2869 2121 Sólo Whatsapp</a> 
@@ -50,8 +50,12 @@
                 <input type="submit" value="Enviar mensaje" class="botonEnviar">
             </div>
         </form>
-
+   
+    <% if (typeof mensaje!='undefined') { %>
+        <p class="mensaje"><%= mensaje %></p> 
+    <% } %>
    </div>
+</div>
    <%- include('./partials/footer.ejs')  %> 
 </body>
 </html>

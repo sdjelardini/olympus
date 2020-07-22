@@ -52,5 +52,6 @@ app.use(function (err, req, res, next) {
 // POST route from contact form
 app.post("/contacto", (req, res) => {});
 app.post("/asociarse", (req,res) => {});
+app.post("/" , (req,res) => {});
 
 module.exports = app;

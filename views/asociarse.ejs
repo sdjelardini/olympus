@@ -9,13 +9,12 @@
 </head>
 <body>
     <div class="containerAsociarse">
-        
         <div class="datos">
             <div class="asociate">
-            <h1>Asociate</h1>
+            <h1>ASOCIATE</h1>
             <p style="font-size: large;">Dejanos tus datos y nos contactaremos con vos!</p>
             </div>
-           <form action="/asociarse" method="POST">
+           <form action="/asociarse" method="POST" style="width: 100%; margin-left: 43%;">
               <div class="nombre">
                 <p>Nombre:</p>
                 <input type="text" name="nombre" id="name" placeholder="Nombre completo">
@@ -40,6 +39,9 @@
                 <button name="submit" type="submit" id="submit">Inscribirme</button>
             </div>
            </form>
+        <% if (typeof mensaje!='undefined') { %>
+            <p class="mensaje"><%= mensaje %></p> 
+        <% } %>
         </div>
     </div>
     <%- include('./partials/footer.ejs')  %> 

@@ -63,3 +63,31 @@ a:hover {
     font-size: medium;
     margin-right: 5%;
 }
+
+@media screen and (max-width: 500px) {
+    body {
+        width: 100% !important;
+    }
+    .container {
+        width: 100%;
+        background-color: #1c1c1c !important;
+        position: absolute !important;
+    }
+    .barra {
+        width: 100%;
+        display: inline;
+        float: none;
+        justify-content: none;
+    }
+    a.navbar {
+        width: 50%;
+    }
+    .logo-olympus {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        margin-left: 20%;
+    }
+}

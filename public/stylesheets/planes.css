@@ -43,3 +43,9 @@ footer {
 li {
     font-size: large;
 }
+
+@media screen and (max-width:500px) {
+    .containerPlanes {
+        padding-top: 110%;
+    }
+}

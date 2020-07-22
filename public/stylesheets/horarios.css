@@ -77,3 +77,12 @@ td {
 span {
     color: black;
 }
+
+@media screen and (max-width: 500px){
+    .horario{
+        padding-top: 100%;
+    }
+    .egt {
+        margin-left: 0px;
+    }
+}

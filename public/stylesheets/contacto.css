@@ -107,3 +107,41 @@ footer, form{
 .botonEnviar {
     text-align: center;
 }
+
+.mensaje {
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    color: white;
+    margin-bottom: 3%;
+    text-align: center;
+    margin-right: 13%;
+}
+
+@media screen and (max-width: 500px) {
+    .containerContacto {
+        padding-top: 100%;
+    }
+    .facebookContacto {
+        margin-left: 38%;
+    }
+    .contacto2 {
+        margin-left: 10%;
+    }
+    #name {
+        width: 90%;
+    }
+    #email {
+        margin-left: 1%;
+        width: 90%;
+    }
+    .asunto, #mensaje{
+        margin-left: 1%;
+    }
+    #mensaje {
+        width: 90%;
+    }
+    .enviar {
+        width: 90%;
+    }
+}
